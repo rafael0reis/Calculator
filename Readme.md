@@ -1,0 +1,1 @@
+Projeto super simples pra treinar um pouco de lógica de programação

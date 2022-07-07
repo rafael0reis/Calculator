@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c916f607ea.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="calcBackground">
+        <h1>Simple Calculator</h1>
+        <div id="calculator">
+            <h2>Calculator</h2>
+            <div id="calcContent" >
+                <p id="calcInput"></p>
+                <table id="calcTable">
+                    <tr>
+                        <td><button onclick="cleanVal()"><i class="fa-solid fa-c"></i></button></td> <!--clear-->
+                        <td><button onclick="backspace()"><i class="fa-solid fa-delete-left"></i></button></td> <!--backspace-->
+                        <td><button onclick="showValue('/')"><i class="fa-solid fa-divide"></i></button></td> <!--divide-->
+                        <td><button onclick="showValue('*')"><i class="fa-solid fa-xmark"></i></button></td> <!--multiply-->
+                    </tr>
+                    <tr>
+                        <td><button onclick="showValue(7)"><i class="fa-solid fa-7"></i></button></td> <!--7-->
+                        <td><button onclick="showValue(8)"><i class="fa-solid fa-8"></i></button></td> <!--8-->
+                        <td><button onclick="showValue(9)"><i class="fa-solid fa-9"></i></button></td> <!--9-->
+                        <td><button onclick="showValue('+')"><i class="fa-solid fa-plus"></i></button></td> <!--plus-->
+                    </tr>
+                    <tr>
+                        <td><button onclick="showValue(4)"><i class="fa-solid fa-4"></i></button></td> <!--4-->
+                        <td><button onclick="showValue(5)"><i class="fa-solid fa-5"></i></button></td> <!--5-->
+                        <td><button onclick="showValue(6)"><i class="fa-solid fa-6"></i></button></td> <!--6-->
+                        <td><button onclick="showValue('-')" ><i class="fa-solid fa-minus"></i></i></button></td> <!--minus-->
+                    </tr>
+                    <tr>
+                        <td><button onclick="showValue(1)"><i class="fa-solid fa-1"></i></button></td> <!--1-->
+                        <td><button onclick="showValue(2)"><i class="fa-solid fa-2"></i></button></td> <!--2-->
+                        <td><button onclick="showValue(3)"><i class="fa-solid fa-3"></i></button></td> <!--3-->
+                        <td rowspan="2"><button onclick="calculator()" class="btnRow">=</button></td> <!--enter-->
+                    </tr>
+                    <tr>
+                        <td colspan="2"><button onclick="showValue(0)" class="btnCol"><i class="fa-solid fa-0"></i></button></td>
+                        <td><button onclick="showValue('.')">.</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
